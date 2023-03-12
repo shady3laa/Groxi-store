@@ -376,7 +376,7 @@ header {
 }
  .fav i {
     padding: 16px;
-    color: white;
+    color: black;
 }
  .box .info {
     text-align: center;
@@ -416,6 +416,9 @@ align-items: flex-start;
     padding: 12.5px 22px;
     transition: var(--transition);
     color: white;
+    display: block;
+    width: fit-content;
+    margin: 7px auto;
 }
 /* global */
 .treading__content .box .info .btn:hover {
