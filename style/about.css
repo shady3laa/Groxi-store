@@ -70,6 +70,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .sliceHead {
     position: absolute;
@@ -124,7 +125,6 @@ a{
         display: none;
     }
 }
-
 .nav__icons a i {
     background-color: white;
     padding: 13px;
@@ -158,6 +158,9 @@ a{
     padding: 12.8px 20.8px;
     border-radius: 50%;
     transition: var(--transition);
+    position: absolute;
+    right: 24px;
+    top: 25%;
 }
 @media (min-width:768px) {
     .header__toggle-menu i {
