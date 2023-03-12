@@ -297,8 +297,6 @@ a{
 .our {
     height: 780px;
     background-color: var(--back-blue);
-    margin-block-end: 144px;
-    
 }
 
 .our .container {
@@ -349,6 +347,34 @@ a{
         margin-block-end: 5px;
         margin-inline: auto;
     }
-
-        
 }
+
+/* start video  */
+.video {
+    margin-block-end: 144px;
+}
+.video__box {
+    width: 1110px;
+    height: 640px;
+    position: relative;
+}
+.video__box video {
+    inline-size: 100%;
+    position: relative;
+    block-size: 100%;
+}
+.video__box img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+@media (max-width:1199px) {
+    .video__box  {
+        width: 100%;
+        block-size: fit-content;
+
+    }
+}
+        
