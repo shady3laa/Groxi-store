@@ -242,3 +242,113 @@ a{
 .header__constant-title h2 {
     font-size: 40px;
 }
+
+.featurePrice {
+    margin-block-end: 144px;
+}
+.featurePrice .container {
+    display: flex;
+    gap: 48px;
+}
+.featurePrice img {
+    width: 610px;
+}
+
+.featurePrice__text {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+}
+.featurePrice__text h2 {
+    font-size: 44.8px;
+    margin-block-end: 16px;
+}
+.featurePrice__text p {
+    font-size: 20px;
+}
+.featurePrice__text .p-s {
+    margin-block-start: 16px;
+}
+@media (max-width:1199px) {
+    .featurePrice img {
+        width: 450px;
+    }
+    .featurePrice__text h2 {
+        font-size: 37px;
+    }
+}
+@media (max-width:991px) {
+    .featurePrice .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .featurePrice img {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media (max-width:767px) {
+    .featurePrice img {
+        width: 370px;
+    }
+}
+.our {
+    height: 780px;
+    background-color: var(--back-blue);
+    margin-block-end: 144px;
+    
+}
+
+.our .container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    block-size: 100%;
+}
+
+.our .box {
+    inline-size: 540px;
+    background-color: var(--white);
+    border-block-start: 3px solid var(--main-color);
+    block-size: 510px;
+    padding: 64px 48px;
+}
+.our .box img {
+    inline-size: 79px;
+    margin-block-end: 10px;
+}
+.our .box h2 {
+    text-transform: capitalize;
+    margin-block-end: 16px;
+    font-size: 40px;
+}
+.our .box p {
+    line-height: 1.5;
+    font-size: 20px;
+    margin-block-end: 64px;
+}
+@media (max-width:767px) {
+    .our .container {
+        flex-direction: column;
+    }
+    .our .box  {
+        inline-size: 340px;
+        block-size: 100%;
+        padding: 44px 28px;
+        text-align: center;
+    }
+    .our {
+        height: 100%;
+        padding-block: 50px;
+    }
+    .our .box img,
+    .our .btn {
+        margin-block-end: 5px;
+        margin-inline: auto;
+    }
+
+        
+}
