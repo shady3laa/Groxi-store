@@ -122,7 +122,15 @@ a{
 }
 @media (max-width:767px) {
     .nav__icons {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -105%;
+        top: 50%;
+        gap: 7px;
+        transform: translateY(-50%);
+        transition: var(--transition);
+        z-index: 2000;
     }
 }
 .nav__icons a i {

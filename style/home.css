@@ -43,7 +43,7 @@
     justify-content: space-between;
     gap: 30px;
   }
-}
+
 .links__item li a {
   font-size: 19px;
   font-family: "Barlow", sans-serif;
@@ -74,6 +74,19 @@
   .nav__icons {
     display: none;
   }
+}
+}
+@media (max-width: 768px){
+.nav__icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -105%;
+    top: 50%;
+    gap: 0.6rem;
+    transform: translateY(-50%);
+    transition: var(--transtiom);
+}
 }
 
 .nav__icons a i {
