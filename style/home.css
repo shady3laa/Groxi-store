@@ -444,6 +444,10 @@ header {
   padding-inline: 30px;
 }
 /* start best seller */
+.best-seller {
+  min-height: 600px;
+  margin-block-end: 144px;
+}
 .best-seller__nav {
   display: flex;
   align-items: center;
@@ -459,6 +463,10 @@ header {
   color: var(--black);
   cursor: pointer;
   position: relative;
+}
+.best-seller__nav .active {
+  color: var(--main-color);
+
 }
 .best-seller__nav li::before {
   content: "";

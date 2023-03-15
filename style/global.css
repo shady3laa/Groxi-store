@@ -425,6 +425,19 @@ a {
       color: gray;
   }
 
+/* hot card */
+  .hot::before {
+    content: "Hot";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--red);
+    padding: 15px 16px;
+    color: var(--white);
+    font-weight: 400;
+    border-end-end-radius: 12px;
+  }
+
 
 
 
