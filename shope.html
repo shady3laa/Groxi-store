@@ -62,137 +62,319 @@
     </nav>
     
     </div>
-    <div class="best-seller">
-      <div class="container">
-        <div class="main-title">
-          <span>Best Seller</span>
-          <h2>Feature Products</h2>
+   <!-- shopSection -->
+   <div class="shop-section">
+    <div class="container">
+        <div class="shop-section__nav">
+            <div class="nav__left">
+                <form>
+                    <input class="nav__search" type="search" id="search" placeholder="Search ">
+                </form>
+                <div class="sort-icons">
+                    <i class="fa-solid fa-grip active list list-1"></i>
+                    <i class="fa-solid fa-list  list list-2"></i>
+                    <span>Showing 1-18 of 24 results</span>
+                </div>
+            </div>
+            <div class="nav__select">
+                <select id="sort-icons">
+                    <option>Default Sorting</option>
+                    <option>roman sorting</option>
+                    <option>privet Sorting</option>
+                    <option>deferent Sorting</option>
+                </select>
+            </div>
         </div>
-        <ul class="best-seller__nav">
-          <li data-prod=".All" class="active">All</li>
-          <li data-prod=".Food">Food</li>
-          <li data-prod=".Fruits">Fruits</li>
-          <li data-prod=".Health">Health</li>
-          <li data-prod=".Meat">Meat</li>
-          <li data-prod=".Dairy">Dairy</li>
-        </ul>
-        <div class="best-seller__content">
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/Bread.png" alt="trending" />
+        <div class="shop-content">
+            <div class="filter">
+                <div class="card">
+                    <h3>Categories</h3>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Beverages">
+                            <label for="Beverages">Beverages</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Biscuits">
+                            <label for="Biscuits">Biscuits & Snacks</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="BreakFast">
+                            <label for="BreakFast">BreakFast & Dairy</label>
+                                </div>
+                            
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Fruits">
+                            <label for="Fruits">Fruits & Vegetables</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Home">
+                            <label for="Home">Home Needs</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Grocery">
+                            <label for="Grocery">Grocery & Staples</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Kitchen">
+                            <label for="Kitchen">Home & Kitchen</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Household">
+                            <label for="Household">Household Needs</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Meats">
+                            <label for="Meats">Meats, Frozen</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Noodles">
+                            <label for="Noodles">Noodles, Sauces</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Personal">
+                            <label for="Personal">Personal Care</label>
+                        </div>
+                    </div>
+                    <div class="item-type brand ">
+                        <div class="brand-item">
+                            <input type="checkbox" id="Pet">
+                            <label for="Pet">Pet Care</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Filter By Price</h3>
+                    <form>
+                        <input type="range" name="range" id="range">
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>Trending Items</h3>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/Mango.png" alt="trending">
+                        </div>
+                        <div class="info">
+                            <h3>Fresh Mango</h3>
+                            <p><del>$15</del> $12</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/MeatStack.png" alt="trending">
+                        </div>
+                        <div class="info">
+                            <h3>Beef Steak</h3>
+                            <p><del>$15</del> $12</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/Broccoli.png" alt="trending">
+                        </div>
+                        <div class="info">
+                            <h3>Broccoli</h3>
+                            <p><del>$15</del> $12</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/Strawberries-2.png" alt="trending">
+                        </div>
+                        <div class="info">
+                            <h3>Strawberries</h3>
+                            <p><del>$15</del> $12</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/bottle.png" alt="trending">
+                        </div>
+                        <div class="info">
+                            <h3>Body Lotion</h3>
+                            <p><del>$15</del> $12</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="viewMore" href="erroe.html">VIEW MORE &rarr;</a>
+                </div>
             </div>
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Fresh Bread</h3>
-              <p><del>$15</del> $12</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
+            <div class="products">
+                <div class="content">
+                    <div class="box hot All Food">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/Bread.png" alt="trending" />
+                        </div>
+                        <div class="info">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Fresh Bread</h3>
+                          <p><del>$15</del> $12</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                      <div class="box Food All">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/Pepper.png" alt="trending" />
+                        </div>
+                        <div class="info">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Red Pepper</h3>
+                          <p><del>$20</del> $15</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                      <div class="box hot Fruits Health All">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/Orange.png" alt="trending" />
+                        </div>
+            
+                        <div class="info">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Orange Beverage</h3>
+                          <p><del>$30</del> $20</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                      <div class="box Food All ">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/Eggs.png" alt="trending" />
+                        </div>
+            
+                        <div class="info">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Dozen Egg</h3>
+                          <p><del>$15</del> $12</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                      <div class="box hot Health All">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/Oil.png" alt="trending" />
+                        </div>
+            
+                        <div class="info hot">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Cooking Oil</h3>
+                          <p><del>$20</del> $15</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                      <div class="box All Health">
+                        <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img">
+                          <img src="image/bottle.png" alt="trending" />
+                        </div>
+            
+                        <div class="info">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <h3>Body Lotion</h3>
+                          <p><del>$30</del> $20</p>
+                          <a href="erroe.html" class="btn">Add To Card</a>
+                        </div>
+                      </div>
+                </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/Pepper.png" alt="trending" />
-            </div>
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Red Pepper</h3>
-              <p><del>$20</del> $15</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/Orange.png" alt="trending" />
-            </div>
-
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Orange Beverage</h3>
-              <p><del>$30</del> $20</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/Eggs.png" alt="trending" />
-            </div>
-
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Dozen Egg</h3>
-              <p><del>$15</del> $12</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/Oil.png" alt="trending" />
-            </div>
-
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Cooking Oil</h3>
-              <p><del>$20</del> $15</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="fav"><i class="fa-solid fa-heart"></i></div>
-            <div class="img">
-              <img src="image/bottle.png" alt="trending" />
-            </div>
-
-            <div class="info">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Body Lotion</h3>
-              <p><del>$30</del> $20</p>
-              <a href="erroe.html" class="btn">Add To Card</a>
-            </div>
-          </div>
         </div>
-      </div>
+
     </div>
-    <!-- start testimonial -->
+   </div>
+
     <div class="testimonial">
       <div class="main-title">
         <span>testimonial</span>
