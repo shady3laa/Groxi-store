@@ -379,6 +379,10 @@ header {
   padding: 16px;
   color: black;
 }
+.fav i:hover {
+  animation: heart 0.5s  linear infinite;
+
+}
 .box .info {
   text-align: center;
   line-height: 2;
@@ -666,7 +670,7 @@ header {
       }
   }
   footer {
-      min-height: 710px;
+      min-height: 540px;
       color: var(--white);
       background-color: var(--dark-main);
       padding-block-end: 80px;
@@ -746,6 +750,14 @@ header {
     }
     70% {
       inset-inline-end: 0;
+    }
+  }
+  @keyframes heart {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
     }
   }
   /* end animation */

@@ -1,0 +1,129 @@
+.postsSection {
+    margin-block-end: 144px;
+}
+.postsSection .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+}
+.bar-icon {
+    display: none;
+}
+.box img {
+    width: 100%;
+}
+.box .imgs img:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 27px;
+    height: fit-content;
+}
+.posts .box {
+    width: 396px;
+    background-color: #f1f2f2;
+    margin: 0 auto;
+    display: block;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.posts .box .text {
+    padding: 32px 32px 64px 32px;
+}
+.posts .box .text span {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-block-end: 16px;
+    display: block;
+}
+.posts .box .text span a {
+    color: var(--main-color);
+}
+.posts .box .text h2{
+    font-size: 24px;
+    margin-block-end: 16px;
+    line-height: 1.5;
+}
+.posts .box .text p {
+    color: #6c6c6c;
+    line-height: 1.5;
+    margin-block-end: 32px;
+    font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* side bar */
+.side-bar .close {
+    text-align: right ;
+    display: none ;
+}
+.side-bar form {
+    margin-block-end: 32px;
+}
+.side-bar form input {
+    padding: 16px 32px;
+    outline: none;
+    background-color: var(--back-blue);
+    border: none;
+    font-size: 19.2px;
+}
+.side-bar .boxes {
+    border: 1px solid #e7e5e5;
+    padding: 32px 32px 48px;
+    margin-block-end: 48px;
+}
+.boxes h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.boxes .box-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-block-end: 16px;
+}
+.boxes .box-b a {
+    color: var(--black);
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.boxes .box-b a:hover {
+    color: var(--main-color);
+}
+.boxes-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.boxes a {
+    color: var(--main-color);
+    display: block;
+}
+.boxes a:hover {
+    transform: translateX(10px);
+    transition: 0.7s;
+}
