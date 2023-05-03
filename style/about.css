@@ -113,7 +113,7 @@
     margin-block-end: 144px;
 }
 .video__box {
-    width: 1110px;
+    width: 100%px;
     height: 640px;
     position: relative;
 }

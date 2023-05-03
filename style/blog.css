@@ -1,10 +1,19 @@
 .postsSection {
     margin-block-end: 144px;
 }
-.postsSection .container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 16px;
+@media (min-width:767px) {
+    .postsSection .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 16px;
+    }
+    .boxes .box-b {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-block-end: 16px;
+    }
 }
 .bar-icon {
     display: none;
@@ -21,6 +30,7 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 27px;
     height: fit-content;
+    margin-bottom: 50px;
 }
 .posts .box {
     width: 396px;
@@ -55,25 +65,6 @@
     font-size:20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* side bar */
 .side-bar .close {
     text-align: right ;
@@ -94,16 +85,26 @@
     padding: 32px 32px 48px;
     margin-block-end: 48px;
 }
+.side-bar .boxes span a {
+    display: inline-block;
+    margin-left: 5px;
+}
 .boxes h3 {
     font-size: 22px;
     margin-bottom: 16px;
 }
 .boxes .box-b {
+    margin-block-end: 17px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-block-end: 16px;
+    flex-wrap: wrap;
+}
+.boxes .box-b img {
+    width: 120px;
+}
+.boxes .box-b .text {
+    width: 50%;
 }
 .boxes .box-b a {
     color: var(--black);

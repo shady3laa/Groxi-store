@@ -6,8 +6,7 @@
     position: absolute;
 }
 .erorr__main-title {
-    width: auto;
-    height: auto;
+    width: 85%;
     padding: 96px 128px;
     background-color: white;
     position: absolute;
@@ -49,6 +48,9 @@
     }
     .erorr__main-title {
         text-align: center;
+    }
+    .erorr__main-title img {
+        width: 250px;
     }
 }
 
