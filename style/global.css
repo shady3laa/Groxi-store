@@ -485,7 +485,7 @@ header {
       margin: 0 auto;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 570px) {
     .featuer .container {
       display: flex;
       flex-direction: column;
@@ -493,6 +493,7 @@ header {
     .featuer__box .img-app {
       width: 326px;
     }
+    
   }
   .featuer__box {
     text-align: center;
@@ -630,7 +631,7 @@ header {
   .footer__box {
       position: absolute;
       inset-block-start: -125px;
-      width: 100%;
+      width: 97%;
       block-size: 250px;
   }
   @media (max-width:767px) {
@@ -762,8 +763,24 @@ header {
       font-size: 16px;
   }
   .col-1 {
-      color: gray;
+    color: gray;
+    display: flex;
+    flex-direction: column;
   }
+  /* responsive for very small size */
+  @media(max-width:400px) {
+    .treading .treading__content .box,
+    .featuer__box .img-app,
+    .category .category__box ,
+    .best-seller__content .box{
+      width: 300px;
+    }
+    .banner {
+      display: none;
+    }
+    
+  }
+  /* responsive for very small size */
 
 /* hot card */
   .hot::before {
