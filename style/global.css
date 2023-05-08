@@ -778,6 +778,9 @@ header {
     .banner {
       display: none;
     }
+    .bottom-navbar a{
+      padding: 14px;
+    }
     
   }
   /* responsive for very small size */
