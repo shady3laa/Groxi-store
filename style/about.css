@@ -136,4 +136,10 @@
 
     }
 }
+@media (max-width:400px) {
+    .featurePrice img,
+    .our .box  {
+        width: 300px;
+    }   
+}
         

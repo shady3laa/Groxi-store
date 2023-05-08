@@ -32,8 +32,13 @@
     height: fit-content;
     margin-bottom: 50px;
 }
+@media (max-width:400px) {
+    .posts {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
 .posts .box {
-    width: 396px;
+    width: 90%px;
     background-color: #f1f2f2;
     margin: 0 auto;
     display: block;

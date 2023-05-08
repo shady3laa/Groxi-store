@@ -1,0 +1,96 @@
+.form {
+    padding-block: 50px;
+}
+form {
+    background-color: var(--back-blue);
+    padding: 30px;
+}
+.form__contain h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-block-end: 10px;
+}
+@media (min-width:992px) {
+    .form__contain {
+        display: flex;
+    }
+    form {
+        width: 100%;
+    }
+    .about {
+        width: 60%;
+    }
+}
+.form__contain .info input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin-block-end: 15px;
+}
+@media (min-width:767px) {
+    .form__contain .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+.form__contain textarea {
+    width: 100%;
+    height: 180px;
+    outline: none;
+    border: none;
+    margin-block-end: 15px;
+}
+.form__contain .btn {
+    border: none;
+    padding: 10px 30px;
+    margin-inline-end: 15px;
+}
+.about {
+    background-color: var(--main-color);
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+.about .con {
+    margin-block-end: 25px;
+    
+}
+.about .con h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.about .con i {
+    font-size: 45px;
+    margin-block-end: 10px;
+}
+.about .con h3 {
+    margin-block-end: 15px;
+
+}
+.about .con p {
+    line-height: 30px;
+}
+
+.GoogleMap .mapouter {
+    margin-bottom: 9rem;
+    height: 600px;
+    width: 100%;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none ;
+    width: 100%;
+    height: 100%;
+  }
+  .gmap_iframe {
+    width: 100%;
+    height: 100%;
+  }

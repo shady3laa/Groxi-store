@@ -779,8 +779,11 @@ header {
       display: none;
     }
     .bottom-navbar a{
-      padding: 14px;
+      padding: 12px;
     }
+    .footer__content form input[type=email] {
+      width: 277px;
+  } 
     
   }
   /* responsive for very small size */
